@@ -9,98 +9,116 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 body {
-    background-color: #F3EAE2;
+    
     font-family: sans-serif; 
 }
 nav {
     display: flex;
     justify-content: space-between;
     background-color: #540B51;
-    
+       
     
 }
-#logo {
-    width: 55px;
-    margin: 10px;
+.nav_ul{
+    display: none;
+}
+#nav_logo {
+    width: 140px;
+    padding: 35px;
 }
 
-nav button {
+.nav_button {
     background-color: #540B51;
     border: 0;
     color: white;
 }
-nav button img {
-    width: 15px;
-    margin: 10px;
+.nav_img_button {
+    width: 30px;
+    margin: 20px;
 
 }
+
+/*Ahora hacemos el header*/
+
+
 header {
     display:flex;
     flex-direction: column;
 }
-.primeraParte {
+.primeraParte_divHeader {
     background-color: #540B51;
     display: flex;
     flex-direction: column;
 }
 
-.primeraParte h1 {
+.primeraParte_divHeader h1 {
+    text-align: center;    
+    color:white;
+    font-size: 73px;
+}
+
+.primeraParte_divHeader p {
     text-align: center;
-    margin-bottom: 5px;
+    font-size: 25px;
     color:white;
 }
 
-.primeraParte p {
-    text-align: center;
-    font-size: 11px;
-    color:white;
-}
-
-.segundaParte {
+.segundaParte_divHeader {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    
 }
 
-.segundaParte button{
-    height: 31px;
-    margin-bottom: 6px;
+.segundaParte_divHeader button{
+    height: 70px;
+    margin: 12px;
     border-radius: 5px;
     border:#540B51;
-    font-size: 7px;
+    text-align: center;    
     text-transform: uppercase;
     font-weight: bold;
+    
 }
 
-.primerBoton{
+#primerBoton_header{
+    font-size: 30px;
     color:#540B51;
 }
 
-.segundoBoton{    
-    
+.segundoBoton_header{       
     background-color: #4285F4;
     color:white;
+    display: flex;
+    justify-content: flex-start;
+   
 }
 
-.segundoBoton img{
-    width: 18px;
-    padding: 2px;
+.segundoBoton_header img{
+    width: 40px;
+    margin: 10px;
     background: white;
     
+    
 }
-.segundoBoton span {
-    font-size: 11px;
+#segundoBoton_span {
+    font-size: 30px;    
+    margin: 14px;
 }
 .productImg{
     
-    width: 436px;
+    width: 1000px;
+    
+}
+.titulo {
+    background-color: #F3EAE2;
 }
 
  .titulo p{
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 25px;
+    
 }
 
 .iconos{
@@ -109,33 +127,36 @@ header {
     align-content: center;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #F3EAE2;
 }
 
 .iconos img{
-    height: 17px;
-    padding: 7px;
+    height: 50px;
+    margin: 20px;
 }
 
 .division{
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    background-color: #F3EAE2;
 }
 
 .division .movil{
-    width: 436px;
+    margin-top: 50px;
+    width: 730px;
 }
 
 .division h2{
-    font-size: 16px;
+    font-size: 55px;
     font-weight: bold;
     color:#191817;
 }
 
 .division p{
-    font-size: 10px;
+    font-size: 28px;
 }
 
 .division a{
-    font-size: 10px;
+    font-size: 22px;
     text-decoration: none;
     color: #2E71A6;
 }
@@ -144,18 +165,23 @@ header {
     width: 10px;
 }
 
+
 .divisionFinal{
     background-color:white;
+    padding-top: 50px;
+    
 }
 
 .divisionFinal h3{
-    font-size: 16px;
+    font-size: 60px;
     text-align: center;
     font-weight: bold;
     color:#191817;
+    
 }
 
 .divisionFinal p{
+    font-size: 35px;
     text-align: center;
 }
 
@@ -165,4 +191,119 @@ header {
 }
 .span {
     color: #540B51;
+    font-size: 80px;
 } 
+
+.divisionFinal_botones button{
+    height: 90px;
+    width: 96%;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+.divisionFinal_boton1{
+    background-color:#540B51;
+    color: white;
+    text-align: center;
+    
+}
+.divisionFinal_boton2{
+    background-color:white;
+    color: #540B51;
+    text-align: center;
+    
+}
+.divisionFinal1{
+    background-color:#540B51;
+    padding-top: 50px;
+
+}
+.divisionFinal1 h3{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+
+}
+.divisionFinal1 button {
+    height: 90px;
+    width: 96%;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border-color: white;
+    border-width: 4px;
+    
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.divisionFinal1_b1 {
+    background-color: #540B51;
+    color: white;
+    text-align: center;
+}
+.divisionFinal1_b2{
+    color: #540B51;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.negro {
+    color: black;
+
+}
+.last_iconos{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.last_iconos li > i {
+    width: 80px;
+}
+
+.small {
+    text-align: center;
+    font-size: 23px;
+}
+   
+    
+
+
+
+
+
+
+/* .segundaParte_divHeader button{
+    height: 70px;
+    margin: 12px;
+    border-radius: 5px;
+    border:#540B51;
+    text-align: center;    
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+#primerBoton_header{
+    font-size: 30px;
+    color:#540B51;
+}
+
+.segundoBoton_header{       
+    background-color: #4285F4;
+    color:white;
+    display: flex;
+    justify-content: flex-start;
+   
+} */
